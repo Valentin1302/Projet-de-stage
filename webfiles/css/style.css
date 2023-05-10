@@ -1,0 +1,480 @@
+  @import url(https://fonts.googleapis.com/css2?family=Anuphan:wght@500&family=Chivo+Mono:ital,wght@1,100&family=Kalam&family=Lobster&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap);
+  @import url(https://fonts.googleapis.com/css2?family=Anuphan:wght@500&family=Chivo+Mono:ital,wght@1,100&family=Lobster&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap);
+  @import url(https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap);
+  
+  *,
+  ::before,
+  ::after
+   {
+      margin: 0;
+      padding: 0;
+  }
+  .texte{
+    background-image: url('../../src/jeunesse.jpg');
+  }
+
+  header {
+      background-color: #4A849C;
+      width: 100%;
+  }
+  header div{
+    max-width: 1200px;
+    margin: auto;
+  }
+   nav {
+      display: flex;
+      max-width: 1920px;   
+  }
+  header nav p{
+    font-family: 'great vibes';
+    margin: auto;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-size: 30px;
+  }
+  header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      margin: auto;
+  }
+  header nav ul li a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 2rem;
+      font-family: 'lobster';   
+  }
+  header a:hover {
+      text-decoration: underline #CFAE6E;
+  }
+form{
+    margin: auto;
+}
+  header form input {
+      height: 2.5rem;
+      width: 15rem;
+      border-radius: 10px;
+      margin-right: 0;
+  }
+
+ header form button {
+    border-radius: 10px;
+    width:3rem;
+    height:2.7rem; 
+    margin-left: 0;
+    background-color: white;
+  }
+  .sousmenu {
+      background-color: #DAD5D5; 
+      width: 100%;
+  }
+  .sousmenu nav {
+      max-width: 1200px;
+      margin: auto;
+      justify-content: center;
+  }
+  .sousmenu nav ul {
+      display: flex;
+      list-style: none;
+  }
+  .sousmenu a{
+    padding: 2rem;
+    display: block;
+    color:#749F60;
+    font-family: 'lobster';
+    text-decoration: none;
+  }
+  .book, .music, .game{
+    font-size: 20px;
+    text-decoration: none;
+    color: #222;
+    position: relative;
+}
+.book::before{
+    content: "";
+    position: absolute;
+    background: #749F60;
+    width: 55%;
+    height: 3px;
+    bottom: 1rem;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+}
+.book:hover::before{
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+.music::before{
+    content: "";
+    position: absolute;
+    background: #749F60;
+    width: 45%;
+    height: 3px;
+    bottom: 1rem;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+}
+.music:hover::before{
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+.game::before{
+    content: "";
+    position: absolute;
+    background: #749F60;
+    width: 50%;
+    height: 3px;
+    bottom: 1rem;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+}
+.game:hover::before{
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}  
+  h1 {
+      text-align: center;
+      padding-top: 1rem;
+      font-family: 'kalam';
+  }
+  .ext{
+    text-align: center;
+    margin-top: 1rem; 
+    max-width: 1200px;
+    margin: auto;
+  }
+  .ext img{
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+  }
+  .horaire {
+      margin: auto;
+      width: 100%;
+      max-width: 1200px;
+      background-color: #CFAE6E;
+      color: white;
+      font-family: 'lobster';
+      border-radius: 15px;
+      margin-top: 1rem;
+  }
+  .jour {
+      margin-top: 0.5rem;
+      margin-left: 0.75rem;
+  }
+  .heure {
+      margin-top: 0.5rem;
+      margin-left: 0.75rem;
+  }
+  .info {
+      margin-left: 0.75rem; 
+  }
+  .intro{
+    margin-left: 0.75rem;
+  }
+  .biographie {
+     width: 100%;
+      max-width: 1200px;
+      border-radius: 15px;
+      text-align: justify;
+      margin: auto;
+      background-color:  #4A849C;
+      margin-top: 1rem;
+  }
+  .biographie h2,.biographie p{
+    color:gold;
+  }
+  .biographie a{
+    color:white;
+  }
+  .detail {
+      margin-top: 1.5rem;
+  }
+  h2 {
+      padding-top: 0.5rem;
+      font-family: 'lobster';
+      padding-left: 0.3rem;
+  }
+  .histoire{
+      padding: 1rem;
+      letter-spacing: 0.1rem;
+  }
+  .select {
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      font-family: 'lobster';
+  }
+  .selectImage, .actuImage {
+      display: flex;
+      justify-content: space-between;
+      border: 2px solid black;
+      border-radius: 10px;
+      margin: auto;
+      background-color: rgb(193, 148, 148);
+      max-width: 1200px;
+      width:100%;
+  }
+  .kiem, .savoir, .conte, .mal, .mortel, .royaume,  .pagny, .hoang, .engrenage, .franck, .tsunami, .maison  {
+      border: 2px solid black;
+      border-radius: 5px;
+      width: 11rem;
+      height: 15rem;
+  }
+ .liste{
+    margin-bottom: 5rem;
+ }
+
+
+  .kiem, .savoir, .conte, .mal, .mortel, .royaume, .pagny, .hoang, .engrenage, .franck, .tsunami, .maison{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  .kiem:hover,  .savoir:hover, .conte:hover, .mal:hover, .mortel:hover, .royaume:hover, .pagny:hover, .hoang:hover, .engrenage:hover, .franck:hover, .tsunami:hover, .maison:hover{
+    transform: scale(1.2);
+  }
+  .nomLivre, .nouveau {
+      display: flex;
+      margin: auto;
+      border-radius: 5px;
+      border: 2px solid black;
+      max-width: 1200px;
+      width: 100%;
+      font-family: 'roboto';
+      font-weight: bold;
+      background-color: #4A849C;
+      color: gold;
+  }
+  .kiemHoang, .copro, .fees, .viendra, .dejaVu, .royaumeDes, .florent, .diem, .engre, .appelle, .tsu{
+    display: flex;
+    margin: auto;
+  }
+  .price, .secondPrice {
+    display: flex;
+    border-radius: 5px;
+    border: 2px solid black;  
+    width:100%;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color:#CFAE6E;
+  }
+  .p1, .p2, .p3, .p4, .p5, .p6, .i1, .i2, .i3, .i4, .i5, .i6{
+   display: flex;
+   margin: auto;
+ }
+  .price img, .secondPrice img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: auto;  
+   padding-right: 1rem;
+  }
+  .price p, .secondPrice p {
+      font-family: 'roboto';
+  }
+  .actu {
+      text-align: center;
+      margin-bottom: 3rem;
+      margin-top:1rem;
+  }
+  /* footer */
+
+  footer {
+      width: 100%;
+      background-color: #b77342;
+  }
+  .phone, .gmail, .insta, .fb{
+   display: flex;
+  }
+  footer p, h3{
+    color:white;
+  }
+  footer h3{
+    font-family: 'kamal';
+    letter-spacing: 0.1rem;
+  }
+  .comptefb, .compte, .num, .inter{
+     margin-top: 0.8rem;
+     margin-left: 0.2rem;  
+  }
+  footer a{
+    color: white;
+    text-decoration: none;
+  }
+  footer a:hover{
+    text-decoration:underline #CFAE6E; 
+  }
+  .comptefb, .inter{
+    font-family: 'kamal';  
+  }
+  .compte, .num{
+    font-family: 'lobster';
+  }
+footer>div{
+    margin-left: 2rem;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 1rem;
+}
+  footer img {
+      width: 2rem;
+      height: 2rem;
+      margin-top: 0.5rem;
+  }
+  .news{
+    margin-bottom: 3rem;
+  }
+  footer input{
+    margin-top: 0.5rem;
+  }
+  footer button{
+    margin-left:5rem;
+    margin-top: 0.5rem;
+    width:4rem;
+  }
+.news h3{
+  margin-top: 0.2rem;
+}
+  @media screen and (max-width:1024px) {
+    header{
+        height:4rem;
+        width: 100%;
+    } 
+    header nav ul li a{
+        display: none;
+    }
+    header nav p{
+        margin-top: 0.8rem;
+        margin-left: 1rem;
+    }
+    ul{
+        position: relative;
+        width: 50px;
+        height: 30px;
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
+        left:12rem;
+        top:0.3rem;
+     }
+     ul::before{
+        position: absolute;
+        content: "";
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 3px;
+        background-color: white;        
+     }
+     .sousmenu{
+        display: none;
+     }
+     form{
+        display: none;
+     }
+     header a{
+        position: relative;
+     }
+ 
+    .nomLivre, .nouveau{
+        font-size: 10px;
+    }
+   
+    .kiem, .savoir, .conte, .mal, .mortel, .royaume, .pagny, .hoang, .engrenage, .franck, .tsunami, .maison{
+        width: 7rem;
+        height: 7rem;
+    }
+    .price, .secondPrice{
+        font-size: 12px;
+    }
+    .price img, .secondPrice img{
+        width: 1rem;
+        height: 1rem; 
+    }
+    .news{
+      display: none;
+    }
+
+  }
+  @media screen and (max-width:415px){
+    
+    ul{
+      position: relative;
+      width: 50px;
+      height: 30px;
+      border-top: 3px solid white;
+      border-bottom: 3px solid white;
+      left:0rem;
+   }
+   ul::before{
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 3px;
+      background-color: white;      
+   }
+   
+   .kiem, .savoir, .conte, .mal, .mortel, .royaume, .pagny, .hoang, .engrenage, .franck, .tsunami, .maison{
+     width:8rem;
+     height: 4rem;
+   }
+  
+   .kiemHoang, .florent{
+    margin-left:0;
+    padding-right: 0;
+    width: 55px;
+   }
+   .copro, .fees, .viendra, .dejaVu, .royaumeDes, .diem, .engre ,.appelle, .tsu, .doree{
+    padding: 0;
+    width: 55px;
+   }
+   .copro{
+    padding-left: 1rem;
+   }
+   .fees{
+    padding-left: 0.8rem;
+   }
+.engre{
+  padding-left: 0.6rem;
+}
+   .royaumeDes{
+    padding-left: 0.6rem;
+   }
+   .viendra ,.dejaVu, .appelle, .doree{
+    padding-left: 0.7rem;
+   }
+   .diem{
+    padding-left: 1rem;
+   }
+  .tsu{
+    padding-left: 1.2rem;
+   }
+   .savoir, .conte, .mal, .mortel, .royaume, .hoang, .engrenage, .franck, .tsunami, .maison{
+    margin-left: 1rem;
+   }
+   .price, .secondPrice{
+    padding: 0;
+   }
+   .price img, .secondPrice img{
+    padding-right:0.3rem;
+    padding-left: 0; 
+   }
+   .price p ,.secondPrice p{
+    font-size: 8px;
+   }
+ 
+
+   .news{
+     display: none;
+   }
+
+  }

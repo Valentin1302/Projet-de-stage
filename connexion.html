@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="InterLignes Soissons magasin de librairie et loisirs.">
+    <link rel="stylesheet" href="./webfiles/css/connexion.css">
+
+    <title>InterLignes</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p>Librairie InterLignes</p>
+            <form id="rechercher"  action="recherche.php" method="GET">
+                <input type="text" placeholder="Rechercher...">
+                <button type="submit">
+                  <img src="./src/loupe.png" alt="image loupe">
+                </button>
+          
+              </form>
+            <ul>
+                <li><a href="./index.html">Acceuil</a></li>
+                <li><a href="./connexion.html">Connexion</a></li>
+                <li><a href="./panier.html">Panier</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="co">
+        <h1>CONNEXION</h1>
+        <form action="" method="POST">
+            <label for="mail">Votre Adresse Mail</label>
+            <div class="inpmail">
+            <input type="email" id="mail" placeholder="example@gmail.com">
+            </div>
+            <div class="labpass">
+            <label for="pass">Votre Mot De Passe</label>
+            </div>
+            <div class="inpass">
+            <input type="password" id="pass" placeholder="******">
+            </div>
+            <div class="but">
+                <button type="submit">ENVOYER</button>
+            </div>
+            <div class="inscrit">
+                <p>Pas de compte ? <a href="./inscription.html">Inscrivez vous !</a></p>
+            </div>
+        </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h3 class="interL">Inter Lignes</h3>
+            <p><a href="#">Mentions légales</a></p>
+            <p><a href="#">Conditions générales</a></p>
+            <p><a href="#">Données personelles</a></p>
+            <p><a href="#">Gérer mes cookies</a></p>
+        </div>
+        <div class="reseau">
+            <h3>Nos réseaux sociaux :</h3>
+            <div class="fb">
+                <img src="./src/facebook.png" alt="Image du logo Facebook">
+                <p class="comptefb"><a
+                        href="https://www.facebook.com/librairie.interlignes.soissons/?locale=fr_FR">Librairie Inter
+                        Lignes Soissons</a></p>
+            </div>
+
+            <div class="insta">
+                <img src="./src/instagram.png" alt="Image du logo Instagram">
+                <p class="compte"><a href="https://www.instagram.com/inter.lignes/?hl=fr">inter.lignes</a></p>
+            </div>
+        </div>
+        <div class="contact">
+            <h3>Nous contacter:</h3>
+            <div class="phone">
+                <img src="./src/telephone-call.png" alt="Image du logo du téléphone">
+                <p class="num"><a href="tel:+323762271">03-23-76-22-71</a></p>
+            </div>
+            <div class="gmail">
+                <img src="./src/e-mail.png" alt="Image du logo Gmail">
+                <p class="inter"><a href="mailto:interlignes@bbox.fr">interlignes@bbox.fr</a></p>
+            </div>
+        </div>
+        <div class="news">
+            <h3 class="letter">Newsletter :</h3>
+            <div>
+                <input type="email" name="mail" placeholder="Saisissez votre adresse mail...">
+                <div>
+                    <button type="submit">Envoyer</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>

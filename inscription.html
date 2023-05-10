@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="InterLignes Soissons magasin de librairie et loisirs.">
+    <link rel="stylesheet" href="./webfiles/css/inscription.css">
+
+    <title>InterLignes</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p>Librairie InterLignes</p>
+            <form id="rechercher" action="recherche.php" method="GET">
+                <input type="text" placeholder="Rechercher...">
+                <button type="submit">
+                    <img src="./src/loupe.png" alt="image loupe">
+                </button>
+
+            </form>
+            <ul>
+                <li><a href="./index.html">Acceuil</a></li>
+                <li><a href="./connexion.html">Connexion</a></li>
+                <li><a href="./panier.html">Panier</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+      
+            <div class="inscription">
+            <h1>INSCRIPTION</h1>
+                <form action="" method="POST">
+                
+                    <label for="firstName">Votre nom :</label>
+                    <div>
+                        <input type="text" id="firstName">
+                    </div>
+                    <div class="prenomlab">
+                        <label for="lastName">Votre prénom :</label>
+                    </div>
+                    <div>
+                        <input type="text" id="lastName">
+                    </div>
+                    <div class="adresse">
+                        <label class="votremail" for="mail">Votre Adresse Mail</label>
+                    </div>
+                    <div>
+                        <input class="adrmail" type="email" id="mail" placeholder="example@gmail.com">
+                    </div>
+                    <div class="adresse2">
+                        <label for="adresse">Confirmez votre mail :</label>
+                    </div>
+                    <div>
+                        <input type="email" id="adresse">
+                    </div>
+
+                    <div class="pass">
+                        <label class="votremdp" for="pass">Votre Mot De Passe</label>
+                    </div>
+                    <div>
+                        <input class="password1" type="password" id="pass" placeholder="******">
+                    </div>
+                    <div class="pass2">
+                        <label for="word">Confirmez votre mot de passe</label>
+                    </div>
+                    <div>
+                        <input type="password" id="word">
+                    </div>
+                    <div>
+                        <button type="submit">ENVOYER</button>
+                    </div>
+                </form>
+            </div>
+    </main>
+    <footer>
+        <div>
+            <h3 class="interL">Inter Lignes</h3>
+            <p><a href="#">Mentions légales</a></p>
+            <p><a href="#">Conditions générales</a></p>
+            <p><a href="#">Données personelles</a></p>
+            <p><a href="#">Gérer mes cookies</a></p>
+        </div>
+        <div class="reseau">
+            <h3>Nos réseaux sociaux :</h3>
+            <div class="fb">
+                <img src="./src/facebook.png" alt="Image du logo Facebook">
+                <p class="comptefb"><a
+                        href="https://www.facebook.com/librairie.interlignes.soissons/?locale=fr_FR">Librairie Inter
+                        Lignes Soissons</a></p>
+            </div>
+
+            <div class="insta">
+                <img src="./src/instagram.png" alt="Image du logo Instagram">
+                <p class="compte"><a href="https://www.instagram.com/inter.lignes/?hl=fr">inter.lignes</a></p>
+            </div>
+        </div>
+        <div class="contact">
+            <h3>Nous contacter:</h3>
+            <div class="phone">
+                <img src="./src/telephone-call.png" alt="Image du logo du téléphone">
+                <p class="num"><a href="tel:+323762271">03-23-76-22-71</a></p>
+            </div>
+            <div class="gmail">
+                <img src="./src/e-mail.png" alt="Image du logo Gmail">
+                <p class="inter"><a href="mailto:interlignes@bbox.fr">interlignes@bbox.fr</a></p>
+            </div>
+        </div>
+        <div class="news">
+            <h3 class="letter">Newsletter :</h3>
+            <div>
+                <input type="email" name="mail" placeholder="Saisissez votre adresse mail...">
+                <div>
+                    <button type="submit">Envoyer</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
