@@ -16,7 +16,7 @@
 }
 
 .texte {
-  background-image: url("../../src/jeunesse.jpg");
+  background-image: url("/src/jeunesse.jpg");
 }
 
 header {
@@ -46,17 +46,24 @@ header nav ul li a {
 header a:hover {
   text-decoration: underline #CFAE6E;
 }
+header form {
+  position: relative;
+}
 header form input {
   height: 2.5rem;
   width: 15rem;
-  border-radius: 10px;
+  border-radius: 6px 0 0 6px;
+  border: none;
+  top: 0;
+  left: 0;
   margin-right: 0;
 }
 header form button {
-  border-radius: 10px;
+  border-radius: 0 6px 6px 0;
   width: 3rem;
   height: 2.7rem;
   margin-left: 0;
+  border: none;
   background-color: white;
 }
 
@@ -124,7 +131,7 @@ form {
   content: "";
   position: absolute;
   background: #749F60;
-  width: 45%;
+  width: 65%;
   height: 3px;
   bottom: 1rem;
   transform-origin: 100% 0;
@@ -146,7 +153,7 @@ form {
   content: "";
   position: absolute;
   background: #749F60;
-  width: 50%;
+  width: 65%;
   height: 3px;
   bottom: 1rem;
   transform-origin: 100% 0;
@@ -246,7 +253,7 @@ h2 {
   font-family: "lobster";
 }
 
-.selectImage {
+.selectImage, .actuImage {
   display: flex;
   justify-content: space-between;
   border: 2px solid black;
@@ -257,18 +264,8 @@ h2 {
   width: 100%;
 }
 
-.actuImage {
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid black;
-  border-radius: 10px;
-  margin: auto;
-  background-color: rgb(193, 148, 148);
-  max-width: 1200px;
-  width: 100%;
-}
 
-.kiem {
+.kiem, .savoir, .conte, .mal, .mortel, .royaume, .pagny, .hoang, .engrenage, .franck, .tsunami, .maison  {
   border: 2px solid black;
   border-radius: 5px;
   width: 11rem;
@@ -276,139 +273,7 @@ h2 {
   overflow: hidden;
   transition: transform 0.3s ease;
 }
-.kiem:hover {
-  transform: scale(1.2);
-}
-
-.savoir {
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 11rem;
-  height: 15rem;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.savoir:hover {
-  transform: scale(1.2);
-}
-
-.conte {
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 11rem;
-  height: 15rem;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.conte:hover {
-  transform: scale(1.2);
-}
-
-.mal {
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 11rem;
-  height: 15rem;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.mal:hover {
-  transform: scale(1.2);
-}
-
-.mortel {
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 11rem;
-  height: 15rem;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.mortel:hover {
-  transform: scale(1.2);
-}
-
-.royaume {
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 11rem;
-  height: 15rem;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.royaume:hover {
-  transform: scale(1.2);
-}
-
-.pagny {
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 11rem;
-  height: 15rem;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.pagny:hover {
-  transform: scale(1.2);
-}
-
-.hoang {
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 11rem;
-  height: 15rem;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.hoang:hover {
-  transform: scale(1.2);
-}
-
-.engrenage {
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 11rem;
-  height: 15rem;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.engrenage:hover {
-  transform: scale(1.2);
-}
-
-.franck {
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 11rem;
-  height: 15rem;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.franck:hover {
-  transform: scale(1.2);
-}
-
-.tsunami {
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 11rem;
-  height: 15rem;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.tsunami:hover {
-  transform: scale(1.2);
-}
-
-.maison {
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 11rem;
-  height: 15rem;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.maison:hover {
+.kiem:hover, .savoir:hover, .conte:hover, .mal:hover, .mortel:hover, .royaume:hover, .pagny:hover, .hoang:hover, .engrenage:hover, .franck:hover, .tsunami:hover, .maison:hover {
   transform: scale(1.2);
 }
 
@@ -442,62 +307,12 @@ h2 {
   color: gold;
 }
 
-.kiemHoang {
+.kiemHoang, .copro, .fees, .viendra, .dejaVu, .royaumeDes, .florent, .diem, .engre, .appelle, .tsu {
   display: flex;
   margin: auto;
 }
 
-.copro {
-  display: flex;
-  margin: auto;
-}
-
-.fees {
-  display: flex;
-  margin: auto;
-}
-
-.viendra {
-  display: flex;
-  margin: auto;
-}
-
-.dejaVu {
-  display: flex;
-  margin: auto;
-}
-
-.royaumeDes {
-  display: flex;
-  margin: auto;
-}
-
-.florent {
-  display: flex;
-  margin: auto;
-}
-
-.diem {
-  display: flex;
-  margin: auto;
-}
-
-.engre {
-  display: flex;
-  margin: auto;
-}
-
-.appelle {
-  display: flex;
-  margin: auto;
-}
-
-.tsu {
-  display: flex;
-  margin: auto;
-}
-
-.price {
+.price, .secondPrice {
   display: flex;
   border-radius: 5px;
   border: 2px solid black;
@@ -509,97 +324,22 @@ h2 {
   color: white;
   background-color: #CFAE6E;
 }
-.price img {
+.price img, .secondPrice img {
   width: 1.5rem;
   height: 1.5rem;
   margin: auto;
   padding-right: 1rem;
 }
-.price p {
+.price p, .secondPrice p {
   font-family: "roboto";
 }
 
-.secondPrice {
-  display: flex;
-  border-radius: 5px;
-  border: 2px solid black;
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  background-color: #CFAE6E;
-}
-.secondPrice img {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: auto;
-  padding-right: 1rem;
-}
-.secondPrice p {
-  font-family: "roboto";
-}
 
-.p1 {
+.p1, .p2, .p3, .p4, .p5, .p6,.i1, .i2,.i3,.i4,.i5,.i6 {
   display: flex;
   margin: auto;
 }
 
-.p2 {
-  display: flex;
-  margin: auto;
-}
-
-.p3 {
-  display: flex;
-  margin: auto;
-}
-
-.p4 {
-  display: flex;
-  margin: auto;
-}
-
-.p5 {
-  display: flex;
-  margin: auto;
-}
-
-.p6 {
-  display: flex;
-  margin: auto;
-}
-
-.i1 {
-  display: flex;
-  margin: auto;
-}
-
-.i2 {
-  display: flex;
-  margin: auto;
-}
-
-.i3 {
-  display: flex;
-  margin: auto;
-}
-
-.i4 {
-  display: flex;
-  margin: auto;
-}
-
-.i5 {
-  display: flex;
-  margin: auto;
-}
-
-.i6 {
-  display: flex;
-  margin: auto;
-}
 
 .actu {
   text-align: center;

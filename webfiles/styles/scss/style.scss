@@ -29,7 +29,7 @@ $background-color_6: #b77342;
 	flex-direction: column;
 }
 .texte {
-	background-image: url('../../src/jeunesse.jpg');
+	background-image: url('/src/jeunesse.jpg');
 }
 header {
 	background-color: $background-color_1;
@@ -64,17 +64,23 @@ header {
 		}
 	}
 	form {
+        position: relative;
 		input {
 			height: 2.5rem;
 			width: 15rem;
-			border-radius: 10px;
+			border-radius: 6px 0 0 6px;
+            border: none;
+            top: 0;
+            left: 0;
 			margin-right: 0;
 		}
 		button {
-			border-radius: 10px;
+
+			border-radius: 0 6px 6px 0;
 			width: 3rem;
 			height: 2.7rem;
 			margin-left: 0;
+            border: none;
 			background-color: $background-color_2;
 		}
 	}
@@ -140,7 +146,7 @@ form {
 		content: "";
 		position: absolute;
 		background: #749F60;
-		width: 45%;
+		width: 65%;
 		height: 3px;
 		bottom: 1rem;
 		transform-origin: 100% 0;
@@ -163,7 +169,7 @@ form {
 		content: "";
 		position: absolute;
 		background: #749F60;
-		width: 50%;
+		width: 65%;
 		height: 3px;
 		bottom: 1rem;
 		transform-origin: 100% 0;
