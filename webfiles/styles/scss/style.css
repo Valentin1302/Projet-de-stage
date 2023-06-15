@@ -335,9 +335,13 @@ footer h3 {
   font-family: "kamal";
   letter-spacing: 0.1rem;
 }
+footer .interL {
+  margin-left: 0.5rem;
+}
 footer a {
   color: white;
   text-decoration: none;
+  margin-left: 0.5rem;
 }
 footer a:hover {
   -webkit-text-decoration: underline #CFAE6E;
@@ -356,14 +360,6 @@ footer img {
   height: 2rem;
   margin-top: 0.5rem;
 }
-footer input {
-  margin-top: 0.5rem;
-}
-footer button {
-  margin-left: 5rem;
-  margin-top: 0.5rem;
-  width: 4rem;
-}
 
 .phone {
   display: flex;
@@ -375,10 +371,12 @@ footer button {
 
 .insta {
   display: flex;
+  align-items: center;
 }
 
 .fb {
   display: flex;
+  align-items: center;
 }
 
 h3 {
@@ -412,8 +410,12 @@ h3 {
 .news {
   margin-bottom: 3rem;
 }
-.news h3 {
-  margin-top: 0.2rem;
+.news button {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+.news input {
+  padding: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -428,6 +430,9 @@ h3 {
     width: 150px;
   }
   header nav ul {
+    display: none;
+  }
+  header nav form {
     display: none;
   }
   #burgerMenu {
@@ -470,26 +475,25 @@ h3 {
     text-align: center;
     background-color: #ECECEC;
   }
-  .sousmenu {
-    display: none;
-  }
-  form {
-    display: none;
-  }
-  .news {
-    display: none;
-  }
   main section .blocBook {
     width: 50%;
+  }
+}
+@media screen and (max-width: 824px) {
+  footer div {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  footer div h3 {
+    margin: 1rem 0;
   }
 }
 @media screen and (max-width: 415px) {
   main section .blocBook {
     width: 80%;
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-  }
-  .news {
-    display: none;
   }
   footer div {
     display: block;
