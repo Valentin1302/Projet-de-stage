@@ -1,0 +1,503 @@
+@import "https://fonts.googleapis.com/css2?family=Anuphan:wght@500&family=Chivo+Mono:ital,wght@1,100&family=Kalam&family=Lobster&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Anuphan:wght@500&family=Chivo+Mono:ital,wght@1,100&family=Lobster&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  /*box-shadow: 0 0 0 3px red;*/
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.texte {
+  background-image: url("../../../src/jeunesse.jpg");
+}
+
+header {
+  background-color: #4A849C;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  max-width: 1500px;
+  margin: auto;
+}
+header nav img {
+  display: flex;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header nav form {
+  margin: auto;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu {
+  height: 60px;
+  list-style: none;
+  padding: 10px;
+  margin: 40px;
+}
+.menu li {
+  float: left;
+  width: 150px;
+}
+.menu li a {
+  font-family: "lobster";
+}
+.menu li a:link {
+  display: block;
+  color: white;
+  background: #4A849C;
+  padding: 6px 10px;
+  border-right: 1px solid #FFF;
+  text-align: center;
+  text-decoration: none;
+}
+.menu li a:visited {
+  display: block;
+  color: white;
+  background: #4A849C;
+  padding: 6px 10px;
+  border-right: 1px solid #FFF;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  color: white;
+  text-decoration: none;
+  background-color: #4A849C;
+}
+.menu li a:hover {
+  background-color: #4A849C;
+}
+.menu li a:active {
+  background-color: white;
+}
+.menu li:hover .sub-menu {
+  display: block;
+}
+.menu .sub-menu {
+  list-style-type: none;
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+.menu .sub-menu li {
+  float: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+.menu .sub-menu li a:link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  background-color: #DAD5D5;
+}
+.menu .sub-menu li a:hover {
+  background-color: #CFAE6E;
+}
+
+form {
+  position: relative;
+}
+form input {
+  padding: 1rem;
+  width: 15rem;
+  border-radius: 6px 0 0 6px;
+  border: none;
+  top: 0;
+  left: 0;
+  margin-right: 0;
+}
+form button {
+  cursor: pointer;
+  box-shadow: 0 0 5px;
+  position: absolute;
+  border-radius: 0 6px 6px 0;
+  width: 3rem;
+  padding: 1rem;
+  border: none;
+  background-color: white;
+}
+
+main {
+  width: 100%;
+}
+main nav {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1500px;
+}
+main form {
+  margin: auto;
+}
+main h1 {
+  text-align: center;
+  padding-top: 1rem;
+  font-family: "kalam";
+}
+main .ext {
+  text-align: center;
+  margin-top: 1rem;
+  max-width: 1500px;
+  margin: auto;
+}
+main .ext img {
+  width: 100%;
+  margin: auto;
+  border-radius: 15px;
+}
+main .horaire {
+  padding: 1rem 0 1rem 0;
+  margin: auto;
+  width: 100%;
+  max-width: 1500px;
+  background-color: #CFAE6E;
+  color: white;
+  font-family: "lobster";
+  border-radius: 15px;
+  margin-top: 1rem;
+}
+main .jour {
+  margin-top: 0.5rem;
+  margin-left: 0.75rem;
+}
+main .heure {
+  margin-top: 0.5rem;
+  margin-left: 0.75rem;
+}
+main .info {
+  margin-left: 0.75rem;
+}
+main .intro {
+  margin-left: 0.75rem;
+}
+main .biographie {
+  width: 100%;
+  max-width: 1500px;
+  border-radius: 15px;
+  text-align: justify;
+  margin: auto;
+  background-color: #4A849C;
+  margin-top: 1rem;
+}
+main .biographie h2 {
+  color: gold;
+}
+main .biographie p {
+  color: gold;
+}
+main .biographie a {
+  color: white;
+}
+main .detail {
+  margin-top: 1.5rem;
+}
+main h2 {
+  padding-top: 0.5rem;
+  padding-left: 0.3rem;
+}
+main .histoire {
+  padding: 1rem;
+  letter-spacing: 0.1rem;
+}
+main .select {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-family: "lobster";
+}
+main .titleBook {
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  margin: 1rem;
+  font-size: 20px;
+  text-decoration: none;
+  color: #222;
+  position: relative;
+}
+main .titleBook::before {
+  content: "";
+  position: absolute;
+  background: #CFAE6E;
+  width: 15%;
+  height: 3px;
+  top: 2rem;
+  transform-origin: 100% 0;
+  transform: scaleX(0);
+  transition: transform 0.4s;
+}
+main .titleBook:hover::before {
+  transform-origin: 0 0;
+  transform: scaleX(1);
+}
+main #actu {
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  margin: 1rem;
+  font-size: 20px;
+  text-decoration: none;
+  color: #222;
+  position: relative;
+}
+main #actu::before {
+  content: "";
+  position: absolute;
+  background: #CFAE6E;
+  width: 7%;
+  height: 3px;
+  top: 2rem;
+  transform-origin: 100% 0;
+  transform: scaleX(0);
+  transition: transform 0.4s;
+}
+main #actu:hover::before {
+  transform-origin: 0 0;
+  transform: scaleX(1);
+}
+main section {
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(193, 148, 148);
+  margin: auto;
+  max-width: 1500px;
+  flex-wrap: wrap;
+}
+main section .blocBook {
+  width: 33%;
+}
+main section div {
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+main section div .bookImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.1s;
+}
+main section div .bookImg:hover {
+  transform: scale(1.5);
+}
+main section div h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  color: gold;
+}
+main section div .priceImg {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+main section div .priceImg p {
+  font-weight: bold;
+  font-size: 25px;
+}
+main section div .panier {
+  height: 25px;
+  width: 25px;
+}
+
+footer {
+  width: 100%;
+  background-color: #b77342;
+}
+footer p {
+  color: white;
+}
+footer h3 {
+  font-family: "kamal";
+  letter-spacing: 0.1rem;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  -webkit-text-decoration: underline #CFAE6E;
+          text-decoration: underline #CFAE6E;
+}
+footer > div {
+  margin-left: 2rem;
+  max-width: 1500px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 1rem;
+}
+footer img {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+}
+footer input {
+  margin-top: 0.5rem;
+}
+footer button {
+  margin-left: 5rem;
+  margin-top: 0.5rem;
+  width: 4rem;
+}
+
+.phone {
+  display: flex;
+}
+
+.gmail {
+  display: flex;
+}
+
+.insta {
+  display: flex;
+}
+
+.fb {
+  display: flex;
+}
+
+h3 {
+  color: white;
+}
+
+.comptefb {
+  margin-top: 0.8rem;
+  margin-left: 0.2rem;
+  font-family: "kamal";
+}
+
+.compte {
+  margin-top: 0.8rem;
+  margin-left: 0.2rem;
+  font-family: "lobster";
+}
+
+.num {
+  margin-top: 0.8rem;
+  margin-left: 0.2rem;
+  font-family: "lobster";
+}
+
+.inter {
+  margin-top: 0.8rem;
+  margin-left: 0.2rem;
+  font-family: "kamal";
+}
+
+.news {
+  margin-bottom: 3rem;
+}
+.news h3 {
+  margin-top: 0.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 4rem;
+    width: 100%;
+  }
+  header nav {
+    display: block;
+  }
+  header nav img {
+    width: 150px;
+  }
+  header nav ul {
+    display: none;
+  }
+  #burgerMenu {
+    width: 15px;
+    height: 25px;
+    position: absolute;
+    padding: 1 1.5rem;
+    border: none;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+    background-color: transparent;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    transform: rotateZ(0deg);
+  }
+  #burgerMenu::before,
+  #burgerMenu::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    right: 0;
+    position: absolute;
+    background-color: white;
+  }
+  .active {
+    border: none;
+  }
+  .active::before {
+    transform: rotateZ(45deg);
+    border-top: none;
+    border-bottom: none;
+  }
+  .active::after {
+    transform: rotateZ(-45deg);
+  }
+  .open {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ECECEC;
+  }
+  .sousmenu {
+    display: none;
+  }
+  form {
+    display: none;
+  }
+  .news {
+    display: none;
+  }
+  main section .blocBook {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 415px) {
+  main section .blocBook {
+    width: 80%;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  }
+  .news {
+    display: none;
+  }
+  footer div {
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  footer div h3 {
+    margin: 1rem 0;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="InterLignes Soissons magasin de librairie et loisirs.">
+    <link rel="stylesheet" href="./webfiles/styles/scss/style.css">
+    <link rel="stylesheet" href="./src/fontawesome/css/all.min.css">
+    <script src="./webfiles/js/script.js" defer></script>
+    <title>InterLignes</title>
+</head>
+
+<body>
+    <header>
+
+        <nav id="headerNav">
+            <img src="./src/logoInterLignes.png" alt="Image du logo">
+            <form id="rechercher" action="recherche.php" method="GET">
+                <input type="text" placeholder="Rechercher...">
+                <button type="submit">
+
+                    <i class="fa-solid fa-magnifying-glass fa-beat"></i>
+                </button>
+            </form>
+
+            <ul class="menu">
+                <li><a href="./index.html">Acceuil</a></li>
+                <li><a href="./connexion.html">Connexion</a></li>
+                <li><a href="#" class="book">Catégories</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Nos livres</a></li>
+                        <li><a href="">Musique & vidéo</a></li>
+                        <li><a href="">Jeux éducatifs</a></li>
+                    </ul>
+                </li>
+
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="texte">
+            <h1>Bienvenue dans votre librairie Inter Lignes à Soissons</h1>
+            <div class="image">
+                <div class="ext">
+                    <img src="./src/facade.jpg" alt="Image de la facade de la boutique Inter Lignes">
+                </div>
+                <div class="horaire">
+                    <div class="info">
+                        <p>Nos horaires :</p>
+                    </div>
+                    <div class="jour">
+                        <p>Du mardi au Samedi :</p>
+                    </div>
+                    <div class="heure">
+                        <p>10h00-12h00-14h00-19h00</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="biographie">
+                <div class="intro">
+                    <h2>Présentation :</h2>
+                </div>
+                <div class="histoire">
+                    <p>Chez votre librairie INTER LIGNES découvrez un choix impressionnant de livres en tous genres
+                        pour tous les âges
+                        : littérature, pleïades, guides touristiques, livres pratiques, bandes dessinées, manga,
+                        livres
+                        de
+                        poches et bien d'autres encore...
+                        La librairie INTER LIGNES c'est aussi des musiques et vidéos ainsi que des jeux éducatifs.
+                        Accueil, service
+                        et
+                        sourire vous attendent chez INTER LIGNES votre librairie à Soissons au <a
+                            href="https://www.google.fr/maps/place/LIBRAIRIE+INTER+LIGNES/@49.3810999,3.3245866,19z/data=!4m6!3m5!1s0x47e85eb9d571d7df:0x25e6f7a7829986a3!8m2!3d49.3812901!4d3.3249552!16s%2Fg%2F1w6_n4dr">6
+                            Rue Jaulzy</a> près de la
+                        Cathédrale. Parking à proximité : Cathédrale, Place Fernand Marquigny.</p>
+                </div>
+            </div>
+        </div>
+        <h2 class="titleBook">Nos meilleurs sélections :</h2>
+        <section class="bookList">
+
+
+            <div class="blocBook">
+                <div>
+                    <img class="bookImg" src="./src/kieu.jpg" alt="Image du livre Kiem Dieu Hoang">
+                </div>
+                <h3>Kiem Dieu Hoang</h3>
+                <div class="priceImg">
+                    <img class="panier" src="./src/paniers.png" alt="Image du logo d'un panier">
+                    <p>19.00€</p>
+                </div>
+            </div>
+
+            <div class="blocBook">
+                <div>
+                    <img class="bookImg" src="./src/Toutsavoir.jpg" alt="Image du livre Tout savoir sur la copropriété">
+                </div>
+                <h3>Tout savoir sur la copropriété</h3>
+                <div class="priceImg">
+                    <img class="panier" src="./src/paniers.png" alt="Image du logo d'un panier">
+                    <p>21.90€</p>
+                </div>
+            </div>
+
+            <div class="blocBook">
+                <div>
+                    <img class="bookImg" src="./src/contedefées.jpg" alt="Image du livre conte de fées">
+                </div>
+                <h3>Conte de fées</h3>
+                <div class="priceImg">
+                    <img class="panier" src="./src/paniers.png" alt="Image du logo d'un panier">
+                    <p>24.90€</p>
+                </div>
+            </div>
+            <div class="blocBook">
+                <div>
+                    <img class="bookImg" src="./src/Etlemalviendra.jpg" alt="Image du livre et le mal viendra">
+                </div>
+                <h3>Et le mal viendra</h3>
+                <div class="priceImg">
+                    <img class="panier" src="./src/paniers.png" alt="Image du logo d'un panier">
+                    <p>9.50€</p>
+                </div>
+            </div>
+            <div class="blocBook">
+                <div>
+                    <img class="bookImg" src="./src/MortelDejavu.jpg" alt="Image du livre mortel déjà vu">
+                </div>
+                <h3>Mortel déjà vu</h3>
+                <div class="priceImg">
+                    <img class="panier" src="./src/paniers.png" alt="Image du logo d'un panier">
+                    <p>9.99€</p>
+                </div>
+            </div>
+            <div class="blocBook">
+                <div>
+                    <img class="bookImg" src="./src/royaumedesenfoires.png" alt="Image du livre royaume des enfoirés">
+                </div>
+                <h3>Le royaume des enfoirés</h3>
+                <div class="priceImg">
+                    <img class="panier" src="./src/paniers.png" alt="Image du logo d'un panier">
+                    <p>23.50€</p>
+                </div>
+            </div>
+        </section>
+        <h2 id="actu" class="titleBook">Actualités :</h2>
+        <section class="bookList">
+            <div class="blocBook">
+                <div>
+                    <img class="bookImg" src="./src/Pagny.jpg" alt="Image du livre de Florent Pagny">
+                </div>
+                <h3>Pagny vu par Florent</h3>
+                <div class="priceImg">
+                    <img class="panier" src="./src/paniers.png" alt="Image du logo d'un panier">
+                    <p>24.50€</p>
+                </div>
+            </div>
+            <div class="blocBook">
+                <div>
+                    <img class="bookImg" src="./src/kieu.jpg" alt="Image du livre de Kiem Diem Hoang ">
+                </div>
+                <h3>Kiem Dieng Hoang</h3>
+                <div class="priceImg">
+                    <img class="panier" src="./src/paniers.png" alt="Image du logo d'un panier">
+                    <p>19.00€</p>
+                </div>
+            </div>
+            <div class="blocBook">
+                <div>
+                    <img class="bookImg" src="./src/L'engrenage.jpg" alt="Image du livre de l'engrenage">
+                </div>
+                <h3>L'engrenage</h3>
+                <div class="priceImg">
+                    <img class="panier" src="./src/paniers.png" alt="Image du logo d'un panier">
+                    <p>19.90€</p>
+                </div>
+            </div>
+            <div class="blocBook">
+                <div>
+                    <img class="bookImg" src="./src/Lagaf.jpg" alt="Image du livre Je m'appelais Franck">
+                </div>
+                <h3>Je m'appelais Franck</h3>
+                <div class="priceImg">
+                    <img class="panier" src="./src/paniers.png" alt="Image du logo d'un panier">
+                    <p>21.90€</p>
+                </div>
+            </div>
+            <div class="blocBook">
+                <div>
+                    <img class="bookImg" src="./src/tsunami.jpg" alt="Image du livre Tsunami">
+                </div>
+                <h3>Tsunami</h3>
+                <div class="priceImg">
+                    <img class="panier" src="./src/paniers.png" alt="Image du logo d'un panier">
+                    <p>21.90€</p>
+                </div>
+            </div>
+            <div class="blocBook">
+                <div>
+                    <img class="bookImg" src="./src/maisondoree.jpg" alt="Image du livre de La maison dorée">
+                </div>
+                <h3>La maison dorée</h3>
+                <div class="priceImg">
+                    <img class="panier" src="./src/paniers.png" alt="Image du logo d'un panier">
+                    <p>24.00€</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="enfantFooter">
+            <div>
+                <h3 class="interL">Inter Lignes</h3>
+                <p><a href="#">Mentions légales</a></p>
+                <p><a href="#">Conditions générales</a></p>
+                <p><a href="#">Données personelles</a></p>
+                <p><a href="#">Gérer mes cookies</a></p>
+            </div>
+            <div class="reseau">
+                <h3>Nos réseaux sociaux :</h3>
+                <div class="fb">
+                    <img src="./src/facebook.png" alt="Image du logo Facebook">
+                    <p class="namefb"><a
+                            href="https://www.facebook.com/librairie.interlignes.soissons/?locale=fr_FR">Librairie Inter
+                            Lignes Soissons</a></p>
+                </div>
+
+                <div class="insta">
+                    <img src="./src/instagram.png" alt="Image du logo Instagram">
+                    <p class="nameInsta"><a href="https://www.instagram.com/inter.lignes/?hl=fr">inter.lignes</a></p>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Nous contacter:</h3>
+                <div class="phone">
+                    <img src="./src/telephone-call.png" alt="Image du logo du téléphone">
+                    <p class="num"><a href="tel:+323762271">03-23-76-22-71</a></p>
+                </div>
+                <div class="gmail">
+                    <img src="./src/e-mail.png" alt="Image du logo Gmail">
+                    <p class="inter"><a href="mailto:interlignes@bbox.fr">interlignes@bbox.fr</a></p>
+                </div>
+            </div>
+            <div class="news">
+                <h3 class="letter">Newsletter :</h3>
+                <div>
+                    <input type="email" name="mail" placeholder="Saisissez votre adresse mail...">
+                    <div>
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
